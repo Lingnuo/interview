@@ -867,7 +867,7 @@ virtual int A() = 0;
 
 实际上，vbptr 指的是虚基类表指针（virtual base table pointer），该指针指向了一个虚基类表（virtual table），虚表中记录了虚基类与本类的偏移地址；通过偏移地址，这样就找到了虚基类成员，而虚继承也不用像普通多继承那样维持着公共基类（虚基类）的两份同样的拷贝，节省了存储空间。
 
-### 虚继承、虚函数
+### 虚继承、虚函数区分（https://blog.csdn.net/longlovefilm/article/details/80558879?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control）
 
 * 相同之处：都利用了虚指针（均占用类的存储空间）和虚表（均不占用类的存储空间）
 * 不同之处：
